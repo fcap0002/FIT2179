@@ -1,7 +1,8 @@
 function incrementCounter() {
     var spanElement = document.getElementById("counter");
     var count = spanElement.getAttribute('numberOfClicks');
-    count ++;
+    count++;
     spanElement.innerText = count;
-    spanElement.setAttribute('numberOfClicks', count);x
+    spanElement.setAttribute('numberOfClicks', count);
 }
+document.getElementById('incrementButton').addEventListener('click', incrementCounter);
